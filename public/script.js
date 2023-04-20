@@ -102,3 +102,11 @@ canvas.addEventListener("touchstart",onmousedown,false)
 canvas.addEventListener("touchend",onmouseup,false)
 canvas.addEventListener("touchcancel",onmouseout,false)
 canvas.addEventListener("touchmove",throttle(onmouseover,10), false);
+
+function onResize(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+window.addEventListener("resize",onResize,false);
+onResize();
