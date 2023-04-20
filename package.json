@@ -15,12 +15,16 @@
     "Node",
     "js",
     "Socket",
-    "IO" 
+    "IO"
   ],
   "author": "Jashanpreet Singh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jashanakku/RealTimeDrawing/issues"
   },
-  "homepage": "https://github.com/Jashanakku/RealTimeDrawing#readme"
+  "homepage": "https://github.com/Jashanakku/RealTimeDrawing#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
 }
