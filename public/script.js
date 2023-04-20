@@ -29,6 +29,24 @@ function drawLine(x0,y0,x1,y1,color,emit){
     context.linewidth = 2;
     context.stroke();   //create a path
     context.closePath()  //close the path
+
+    if(!emit){
+        return;
+    }
+
+    var w = canvas.width;
+    var h = canvas.height;
+
+    //sent the data in object way means x0 ,y0
+    socket.emit("drawing",{
+        
+            x0: x0 / w,
+            y0: y0 / h,
+            x1: x1 / w,
+            y1: y1 / h,
+            color
+
+    });
 }
 
 
