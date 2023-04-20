@@ -75,7 +75,7 @@ function mouseup(e){
 
 }
 
-function mouseover(e){
+function mousemove(e){
     if(!drawing){
         return;
     }
@@ -92,3 +92,13 @@ function mouseover(e){
     current.x = e.clientX || e.touches[0].clientX;
     current.y = e.clientY || e.touches[0].clientY;
 }
+
+canvas.addEventListener("mousedown",onmousedown,false)
+canvas.addEventListener("mouseup",onmouseup,false)
+canvas.addEventListener("mouseout",onmouseout,false)
+canvas.addEventListener("mousemove",throttle(onmouseover,10), false);
+
+canvas.addEventListener("touchstart",onmousedown,false)
+canvas.addEventListener("touchend",onmouseup,false)
+canvas.addEventListener("touchcancel",onmouseout,false)
+canvas.addEventListener("touchmove",throttle(onmouseover,10), false);
