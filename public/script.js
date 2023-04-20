@@ -13,7 +13,18 @@ var current ={
     color:"black"
 }
 
+//socket doesn't recieve alot of data that why we create throttle to delay
+function throttle(callback,delay){
+    var previousCall = new Date().getTime();
+    return function(){
+        var time = new Date().getTime();
 
+        if(time - previousCall >= delay){
+            previousCall = time;
+            callback.apply(null,arguments);
+        }
+    };
+}
 //So what we need is 3 handler 
 //1= when the mouse in on the screen 
 //2= when the mouse move on the screen
