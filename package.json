@@ -1,0 +1,26 @@
+{
+  "name": "realtimedrawing",
+  "version": "1.0.0",
+  "description": "fdjashlif",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jashanakku/RealTimeDrawing.git"
+  },
+  "keywords": [
+    "Node",
+    "js",
+    "Socket",
+    "IO" 
+  ],
+  "author": "Jashanpreet Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jashanakku/RealTimeDrawing/issues"
+  },
+  "homepage": "https://github.com/Jashanakku/RealTimeDrawing#readme"
+}
