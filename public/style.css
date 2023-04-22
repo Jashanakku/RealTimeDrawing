@@ -6,9 +6,29 @@
 }
 
 .whiteboard{
-    /* box-shadow: 0 0 5px rgba(0, 0,0,25); */
+     box-shadow: 0 0 5px rgba(0, 0,0,25);
     display: block;
-    /* margin: 10px auto;
+    margin: 10px auto;
     width: 90%;
-    border-radius: 10px; */
+    border-radius: 10px; 
 }
+
+h1{ text-align: center;
+    align-items: center;
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right ,#91EAE4,#86A8E7,#7F7FD5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .container{
+    width: 100%;
+    display: flex; */
+/* }
+body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+} */
