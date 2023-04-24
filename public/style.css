@@ -1,4 +1,5 @@
 *{
+    background-color: antiquewhite;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -6,10 +7,12 @@
 }
 
 .whiteboard{
-     box-shadow: 0 0 5px rgba(0, 0,0,25);
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0,0,25);
     display: block;
     margin: 10px auto;
     width: 90%;
+    height: 82vh;
     border-radius: 10px; 
 }
 
@@ -20,15 +23,20 @@ h1{ text-align: center;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-/* .container{
-    width: 100%;
-    display: flex; */
-/* }
-body{
-    margin:0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+} 
+.clear{
+    height: 40px;
+    width: 70px;
+    border-radius: 20px;
     color: white;
-} */
+    font-weight: bold;
+    background-color: #7F7FD5;
+    border: 2px solid #7F7FD5;
+    margin-left: 45%;
+}
+.clear:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0,0,25);
+    opacity: 80%;
+    color: black;
+}

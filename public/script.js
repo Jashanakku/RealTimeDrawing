@@ -7,10 +7,13 @@ var canvas = document.querySelector(".whiteboard");
 var context = canvas.getContext("2d");
 
 
+function clear1(){
+  context.clearRect(0,0,canvas.width,canvas.height);
+}
 // Configuration.
 var drawing = false;
 var current = {
-  color: "black"
+  color: "red"
 };
 
 //socket doesn't recieve alot of data that why we create throttle to delay
@@ -36,7 +39,7 @@ function drawLine(x0, y0, x1, y1, color, emit) {
     context.moveTo(x0, y0);
     context.lineTo(x1, y1);      // drawing a line from one point to other point
     context.strokeStyle = color;
-    context.lineWidth = 2;
+    context.lineWidth = 5;
     context.stroke();              //create a path
     context.closePath();           //close the path
   
